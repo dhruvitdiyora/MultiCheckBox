@@ -1,0 +1,33 @@
+<div class="container">
+  hello
+  <div class="row">
+    <div class="col-4">
+      <p-multiSelect
+        [options]="data"
+        [(ngModel)]="selectedItemsA"
+        optionLabel="itemName"
+        (onChange)="onChangeA($event)"
+      ></p-multiSelect>
+    </div>
+
+    <div class="col-4">
+      <p-multiSelect
+        [options]="data"
+        [(ngModel)]="selectedItemsB"
+        optionLabel="itemName"
+        (onChange)="onChangeB($event)"
+      ></p-multiSelect>
+    </div>
+
+    <div class="col-4">
+      <p-multiSelect
+        [options]="data"
+        [(ngModel)]="selectedItemsC"
+        optionLabel="itemName"
+        (onChange)="onChangeC($event)"
+      ></p-multiSelect>
+    </div>
+  </div>
+</div>
+
+<router-outlet />
